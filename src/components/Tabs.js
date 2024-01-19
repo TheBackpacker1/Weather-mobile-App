@@ -9,7 +9,7 @@ import { Feather } from '@expo/vector-icons'
 const Tab = createBottomTabNavigator()
 
 
-const Tabs = () => {
+const Tabs = ({weather}) => {
   return (
     <Tab.Navigator screenOptions={{
         tabBarActiveTintColor: 'tomato',
