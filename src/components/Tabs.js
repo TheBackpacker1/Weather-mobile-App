@@ -33,8 +33,13 @@ const Tabs = ({weather}) => {
             name={'droplet'}
             size={25}
             color={focused ? 'tomato' : 'black'}
-          />)
-      }} />
+          />
+          )
+      }}
+       />
+   {() => <CurrentWeather  weatherData={weather.list[0]} /> }
+
+
       <Tab.Screen name={'Upcoming'} component={UpComingWeather} options={{
         tabBarIcon: ({ focused }) => (
           <Feather
